@@ -1,1 +1,43 @@
-<p>home works!</p>
+<div class="banner">
+   <div class="content">
+    <h1 class="mb-5">Freshly cooked food<br> at your Doorstep</h1>
+    <a routerLink="menu" class="bg-danger">Order Now</a>
+   </div>
+</div>
+<div class="container mt-5 mb-4">
+    <h1 class="text-center">How to Order</h1>
+   <div class="row">
+    <div class="col-lg-4">
+        <div class="stepBox">
+            <h1>1</h1>
+            <p>Select Food</p>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="stepBox">
+            <h1>2</h1>
+            <p>Order </p>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="stepBox">
+            <h1>3</h1>
+            <p>Get Delivery</p>
+        </div>
+    </div>
+   </div>
+</div>
+<div class="container mt-5 md-5">
+    <h1 class="text-center">Customers Favorites</h1>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let food of foodData; index as i">
+            <div class="foodBox" *ngIf="i<=2">
+                <img src="{{food.foodImg}}" alt="">
+                <h1>{{food.foodName}}</h1>
+                <p>&#8358;{{food.foodPrice}}</p>
+
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">View More</a>
+</div>
