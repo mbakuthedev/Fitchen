@@ -1,1 +1,16 @@
-<p>menu works!</p>
+<div class="container mt-5 mb-5">
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let foods of Details"> 
+            
+            <div class="foodBox mt-3 mb-3">
+                
+               <img src="{{foods.foodImg}}" alt="">
+                <h2>{{foods.foodName}}</h2>
+                <p>{{foods.foodDetail}}</p>
+                <p>&#8358;{{foods.foodPrice}}</p>
+                <a href="" [routerLink]="['/menu', foods.id]" class="buybtn">Order Now</a>
+            </div>
+        </div>
+    </div>
+</div>

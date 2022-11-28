@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './SharedPage/footer/footer.component';
 import { NavbarComponent } from './SharedPage/navbar/navbar.component';
+import { MenupageComponent } from './pages/menupage/menupage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './SharedPage/navbar/navbar.component';
     NavbarComponent,
     MenuComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MenupageComponent
   ],
   imports: [
     BrowserModule,
